@@ -1,8 +1,0 @@
-{
-  "version": 1,
-  "kdf": 1,
-  "aead": 1,
-  "salt": "54dOPRb6l8vg/T7gApDKtQ==",
-  "nonce": "VtuR/smEe9EZalwT",
-  "ciphertext": "H6MHz4bZJD0pO+xFp51nKZga0roQ/6ljr9122VIBbibJ8t1T02weCsse7OE+mwvDjAHB/mKrYyMpl2f7jx8rcP8sQioe5HzaWS8ot2+1COVJKc7J3oHs+Eut7h7lneRr"
-}
