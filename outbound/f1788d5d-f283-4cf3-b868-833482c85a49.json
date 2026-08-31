@@ -1,8 +1,0 @@
-{
-  "ackReadReceiptIds": "",
-  "ciphertext": "{\"wrappedKey\":\"atwIbp8o+kk9AnAx/zE0XwNMUqlAOX2+34xdncOsU2AAaT88nS1NZXGkikMHDU1BRGIdmJ0rPCS1NmujPXn5WxIRMkRyFaTe0WHEazjkZ7juITv+Jk2RKQpgjnPg/60wvMpQS+rJ6K7txReIKMs4h5FUmgt10VElTwbGqeiojEVcEaoDZNiNFNqMbZHgfyZ/lkZrCsiW1DMBxuG8xb8Iyw9VBr0rGJ8Exjp8Nlh1G5VgNej3oOmGYB30oxpMXy/iodST9g7Ny9G0weWQt2ejvwblQYlEf2+ypvMbKRdqq76deLEYdNgTTu1yIziN5yXWPTovktYgwUoiKs1pUQYrRrvXEJP4jfY8+QnnOxV6J0iZbQvh8Rbe4FlxAc0ZE8hmn7whnD+Y5YeqZi+2YtDlxiki8SUAHQMXInYoaGjsgacgm4F1d/niOSMHQqnjQHOBq3SXnXhIMijxFOC/gyNQ6h9TkZeFfIHF0UQPD+pIFIYxwvBAsgRRlpwWyQ0lcToLCRihXBlinIfwFWlm3JhBiBRiQTaQhP0g0m8xmmbA4FkYvEJIFoNnc5fDOr0m7hE6lvgaB1uMBk0z2V35zRKL28VFtCumeU0Yw3LhG71/L+iD1zi0pCLYCKjTZ357uTsNj8wiXPJ0Hheuu11zU+yOizD9SqPsZfW2sfJ0gMrACYs=\",\"nonce\":\"WU7dW1OAL1SUH/ku\",\"ciphertext\":\"gP7eWFYbsFX1qUwqI7qvDdUUotAaVUk=\"}",
-  "createdAt": 1788181735490,
-  "id": "f1788d5d-f283-4cf3-b868-833482c85a49",
-  "recipientId": "3304b83d-ffdd-4b96-91f7-981f487938c7",
-  "senderId": "9107eab3-8f9f-414b-9e39-306e6836bc05"
-}
