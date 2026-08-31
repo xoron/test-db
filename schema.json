@@ -1,0 +1,229 @@
+{
+  "app": "messaging",
+  "version": 1,
+  "types": [
+    {
+      "name": "ProfilePublic",
+      "storage": {
+        "kind": "document",
+        "path": "profile-public.json"
+      },
+      "encrypted": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "publicKey",
+          "type": "String",
+          "required": true
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "ProfileSecrets",
+      "storage": {
+        "kind": "document",
+        "path": "profile-secrets.json"
+      },
+      "encrypted": true,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "displayName",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "handle",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "privateKey",
+          "type": "String",
+          "required": true
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "Contact",
+      "storage": {
+        "kind": "collection",
+        "dir": "contacts"
+      },
+      "encrypted": true,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "peerProfileId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "gitUrl",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "displayName",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "username",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "token",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "lastPolledAt",
+          "type": "Int",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "OutboundMessage",
+      "storage": {
+        "kind": "collection",
+        "dir": "outbound"
+      },
+      "encrypted": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "recipientId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "senderId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "ciphertext",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "createdAt",
+          "type": "Int",
+          "required": false
+        },
+        {
+          "name": "ackReadReceiptIds",
+          "type": "String",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "ReadReceipt",
+      "storage": {
+        "kind": "collection",
+        "dir": "readreceipts"
+      },
+      "encrypted": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "messageId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "senderId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "readAt",
+          "type": "Int",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "InboxMessage",
+      "storage": {
+        "kind": "collection",
+        "dir": "inbox"
+      },
+      "encrypted": true,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "senderId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "outboundMessageId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "fromContactId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "receivedAt",
+          "type": "Int",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    }
+  ]
+}
