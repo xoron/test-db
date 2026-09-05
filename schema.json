@@ -1,6 +1,6 @@
 {
   "app": "messaging",
-  "version": 1,
+  "version": 2,
   "types": [
     {
       "name": "ProfilePublic",
@@ -100,6 +100,16 @@
           "name": "lastPolledAt",
           "type": "Int",
           "required": false
+        },
+        {
+          "name": "connectionStatus",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "lastVerifyError",
+          "type": "String",
+          "required": false
         }
       ],
       "nested": [],
@@ -133,6 +143,11 @@
           "name": "ciphertext",
           "type": "String",
           "required": true
+        },
+        {
+          "name": "body",
+          "type": "String",
+          "required": false
         },
         {
           "name": "createdAt",
@@ -217,6 +232,97 @@
         },
         {
           "name": "receivedAt",
+          "type": "Int",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "SentMessage",
+      "storage": {
+        "kind": "collection",
+        "dir": "sent"
+      },
+      "encrypted": true,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "contactId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "recipientId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "outboundMessageId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "createdAt",
+          "type": "Int",
+          "required": false
+        },
+        {
+          "name": "readAt",
+          "type": "Int",
+          "required": false
+        }
+      ],
+      "nested": [],
+      "relations": [],
+      "parent": null
+    },
+    {
+      "name": "SignalingSession",
+      "storage": {
+        "kind": "collection",
+        "dir": "signaling"
+      },
+      "encrypted": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "recipientId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "senderId",
+          "type": "Id",
+          "required": true
+        },
+        {
+          "name": "role",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "ciphertext",
+          "type": "String",
+          "required": true
+        },
+        {
+          "name": "updatedAt",
           "type": "Int",
           "required": false
         }
