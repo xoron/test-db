@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "kdf": 1,
+  "aead": 1,
+  "salt": "zfBWrJs/Dw6rXOHESJjlZg==",
+  "nonce": "VSkHPLw9jy1yVaRs",
+  "ciphertext": "HfUxzkNWmax+enQRKBaog5D2Ng+UiBs3GVaMbHsWbUsR2ScDDbiWYmW8arg7612hkOx7CBPY4aLySiQORd+cFuQbL0OrfsWffX1zrox4N/r0v0jueCe8iO/IqF8j6aEHEdcNdPB3yG7a8P4BnRvEwv6hPbP6mkG5GHFXlRR79N4ejAL0ylycKj1NEapcoaR/3/8h2c4lXtkSuFaKkUnCIrrG8NYObwcJx3WJ7q0R2CDv3ZR3NPRD4RDoYmXXi84vh+JLljDPV57U4ydRgmaBVbkEV9/0FAMm3h9U9hCrhXYHl5AqM+CxsOI7tINd17ELyXcueczRyIGBmDXRddcacmqvn3i8A5kFdbg6tQR7+t42eWhgTtKqB+PKobntH5vCvPJtxltVPnA2ZHVaFvn9"
+}
